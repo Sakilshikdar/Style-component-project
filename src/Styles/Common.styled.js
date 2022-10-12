@@ -5,3 +5,9 @@ export const Container = styled.div`
     margin: 0 auto;
 `
 
+ export const GridThree = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: ${({gap})=>gap ||"2rem"};
+ `
+

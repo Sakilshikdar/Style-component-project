@@ -40,5 +40,24 @@ export const HeroSection = styled.div`
   /* background-color: ${({theme})=>theme.color.black}; */
        background: linear-gradient(180deg, #D1D2F1 0.47%, rgba(217, 217, 217, 0) 85.31%);
 
+ `
+
+ export const FeaturesSection = styled.section`
+    background: linear-gradient(180deg, #FFFFFF 0.09%, #C9EFF1 100%);
+ `
+
+ export const FeatureCard = styled.div`
+    img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .caption{
+        font-size: 2rem;
+        text-align: center;
+        background-color: ${({bgColor})=>bgColor};
+        color: ${({color})=>color};
+        padding: 2rem;
+    }
 
  `
