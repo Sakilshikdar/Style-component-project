@@ -1,9 +1,13 @@
 import React from 'react'
 import logo from '../../images/abc.jpg'
+import { Container } from '../../Styles/Common.styled'
+import { Nevigation } from '../../Styles/Navbar.styled'
 
 export default function Navbar() {
     return (
-        <div>
+        <Nevigation>
+            <Container>
+
             <div>
             <img src={logo} alt='code-abc'/>
             </div>
@@ -12,6 +16,7 @@ export default function Navbar() {
             <li>About-us</li>
             <li>Teams</li>
         </ul>
-        </div>
+            </Container>
+        </Nevigation>
     )
 }
