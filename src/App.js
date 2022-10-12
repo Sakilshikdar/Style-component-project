@@ -1,13 +1,23 @@
+import { ThemeProvider } from "styled-components";
 import Home from "./Pages/Home";
-import { Section } from "./Styles/Common.styled";
 import { GlobalStyle } from "./Styles/Global.style";
+
+const Theme = {
+  color:{
+    black: "blue",
+    white:"#fff"
+  },
+  mobile: "980px",
+  smallMobile:"580px"
+}
+
 
 function App() {
   return (
-    <div>
+    <ThemeProvider theme={Theme}>
       <GlobalStyle />
       <Home />
-    </div>
+    </ThemeProvider>
   );
 }
 

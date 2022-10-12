@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 
-export const HeroSection =styled.div`
+export const HeroSection = styled.div`
     padding: 8rem 0;
-    color: ${bg=>bg};
+    color: ${bg => bg};
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,13 +16,16 @@ export const HeroSection =styled.div`
         border-radius: 50%;
     }
     h2{
-        font-size: 64px;
+        font-size: 6.4rem;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
         span{
             color: #5156D9;
         }
     }
 `
 
-export const TopSection = styled.section`
-background: linear-gradient(180deg, #D1D2F1 0.47%, rgba(217, 217, 217, 0) 85.31%);
-`
+ export const TopSection = styled.section`
+  /* background-color: ${({theme})=>theme.color.black}; */
+       background: linear-gradient(180deg, #D1D2F1 0.47%, rgba(217, 217, 217, 0) 85.31%);
+ `
