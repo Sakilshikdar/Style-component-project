@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const GlobalStyle= createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
@@ -17,5 +17,17 @@ export const GlobalStyle= createGlobalStyle`
     }
     img{
         width: 100%;
+    }
+
+
+    ul{
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+            li{
+                font-size: 1.8rem;
+            }
     }
 `

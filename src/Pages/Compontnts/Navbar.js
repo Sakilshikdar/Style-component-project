@@ -5,8 +5,8 @@ import { Nevigation } from '../../Styles/Navbar.styled'
 
 export default function Navbar() {
     return (
-        <Nevigation>
             <Container>
+        <Nevigation>
 
             <div>
             <img src={logo} alt='code-abc'/>
@@ -16,7 +16,7 @@ export default function Navbar() {
             <li>About-us</li>
             <li>Teams</li>
         </ul>
-            </Container>
         </Nevigation>
+            </Container>
     )
 }
