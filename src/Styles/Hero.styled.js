@@ -23,9 +23,22 @@ export const HeroSection = styled.div`
             color: #5156D9;
         }
     }
+
+    
+    @media (max-width:${({theme})=>theme.mobile}) {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+       }
+       h2{
+        font-size: 4.4rem;
+        padding: 0 4rem;
+       }
 `
 
  export const TopSection = styled.section`
   /* background-color: ${({theme})=>theme.color.black}; */
        background: linear-gradient(180deg, #D1D2F1 0.47%, rgba(217, 217, 217, 0) 85.31%);
+
+
  `
